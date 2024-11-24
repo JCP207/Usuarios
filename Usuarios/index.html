@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick = "crearPersona()">Crear persona</button>
+    <div class="ocultable" id="ocultable" style="display: none;">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido">
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni">
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="text" id="correo">
+            <button onclick="guardarDatos()">Guardar Datos</button>
+        </div>
+    </div>
+    <h3>Nombre: <span id="nombreInfo"></span></h3>
+    <h3>Apellido: <span id="apellidoInfo"></span></h3>
+    <h3>DNI: <span id="dniInfo"></span></h3>
+    <h3>Teléfono: <span id="telefonoInfo"></span></h3>
+    <h3>Correo: <span id="correoInfo"></span></h3>
+
+    <button onclick = "anteriorPersona()">Anterior persona</button>
+    <button onclick = "siguientePersona()">Siguiente persona</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
